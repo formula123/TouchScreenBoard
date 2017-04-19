@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ThreeLights.WPF.TouchScreenBoard</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>John Zhu</authors>
+    <owners>John Zhu</owners>
+    <licenseUrl>https://github.com/formula123/TouchScreenBoard/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/formula123/TouchScreenBoard</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A Simple TouchScreen Keyboard</description>
+    <releaseNotes>First release.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>WPF VirtualKeyboard</tags>
+  </metadata>
+</package>

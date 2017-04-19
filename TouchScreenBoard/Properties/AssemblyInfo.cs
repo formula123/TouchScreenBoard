@@ -7,7 +7,7 @@ using System.Windows;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("TouchScreenBoard")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A Simple TouchScreen Keyboard")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("TouchScreenBoard")]
