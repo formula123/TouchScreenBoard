@@ -512,8 +512,8 @@
                                                 </StackPanel>
                                             </Button>
 
-                                            <Button Style="{StaticResource InformButton}" Command="local:TouchScreenKeyboard.CmdClear" VerticalContentAlignment="Top" HorizontalContentAlignment="Left"  Width="201" Height="50">
-                                                Clear
+                                            <Button Style="{StaticResource InformButton}" Command="local:TouchScreenKeyboard.CmdClose" VerticalContentAlignment="Top" HorizontalContentAlignment="Left"  Width="201" Height="50">
+                                                Close
                                             </Button>
 
 

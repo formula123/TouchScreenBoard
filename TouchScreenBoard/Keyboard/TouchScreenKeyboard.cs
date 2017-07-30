@@ -141,6 +141,7 @@ namespace TouchKeyboard.Keyboard
 
         public static RoutedUICommand CmdSpaceBar = new RoutedUICommand();
         public static RoutedUICommand CmdClear = new RoutedUICommand();
+        public static RoutedUICommand CmdClose = new RoutedUICommand();
 
 
 
@@ -236,6 +237,7 @@ namespace TouchKeyboard.Keyboard
 
             CommandBinding CbSpaceBar = new CommandBinding(CmdSpaceBar, RunCommand);
             CommandBinding CbClear = new CommandBinding(CmdClear, RunCommand);
+            CommandBinding CbClose = new CommandBinding(CmdClose, RunCommand);
 
             CommandManager.RegisterClassCommandBinding(typeof(TouchScreenKeyboard), CbTab);
             CommandManager.RegisterClassCommandBinding(typeof(TouchScreenKeyboard), CbQ);
@@ -282,7 +284,7 @@ namespace TouchKeyboard.Keyboard
 
             CommandManager.RegisterClassCommandBinding(typeof(TouchScreenKeyboard), CbSpaceBar);
             CommandManager.RegisterClassCommandBinding(typeof(TouchScreenKeyboard), CbClear);
-
+            CommandManager.RegisterClassCommandBinding(typeof(TouchScreenKeyboard), CbClose);
         }
         static void RunCommand(object sender, ExecutedRoutedEventArgs e)
         {
@@ -630,8 +632,8 @@ namespace TouchKeyboard.Keyboard
                     _InstanceObject.Close();
                     _InstanceObject = null;
                 }
-                //_CurrentControl.MoveFocus(new TraversalRequest(FocusNavigationDirection.Next));
-                System.Windows.Input.Keyboard.ClearFocus();
+                _CurrentControl.MoveFocus(new TraversalRequest(FocusNavigationDirection.Next));
+                //System.Windows.Input.Keyboard.ClearFocus();
 
             }
             else if (e.Command == CmdShift) //Fourth Row
@@ -722,8 +724,11 @@ namespace TouchKeyboard.Keyboard
             }
             else if (e.Command == CmdClear)//Last row
             {
-
                 TouchScreenKeyboard.TouchScreenText = "";
+            }
+            else if (e.Command == CmdClose)
+            {
+                OnLostFocus(_CurrentControl, null);
             }
         }
         #endregion

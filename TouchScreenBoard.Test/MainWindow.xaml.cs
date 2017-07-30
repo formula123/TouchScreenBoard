@@ -23,5 +23,9 @@ namespace TouchScreenBoard.Test
         {
             InitializeComponent();
         }
+
+        private void clickBtn_Click(object sender, RoutedEventArgs e)
+        {
+        }
     }
 }
