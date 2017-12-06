@@ -832,11 +832,11 @@ namespace TouchKeyboard.Keyboard
         {
             Control host = sender as Control;
 
-            _PreviousTextBoxBackgroundBrush = host.Background;
+            //_PreviousTextBoxBackgroundBrush = host.Background;
             _PreviousTextBoxBorderBrush = host.BorderBrush;
             _PreviousTextBoxBorderThickness = host.BorderThickness;
 
-            host.Background = Brushes.WhiteSmoke;
+            //host.Background = Brushes.Cyan;
             host.BorderBrush = Brushes.Blue;
             host.BorderThickness = new Thickness(4);
 
@@ -925,7 +925,7 @@ namespace TouchKeyboard.Keyboard
         {
 
             Control host = sender as Control;
-            host.Background = _PreviousTextBoxBackgroundBrush;
+            //host.Background = _PreviousTextBoxBackgroundBrush;
             host.BorderBrush = _PreviousTextBoxBorderBrush;
             host.BorderThickness = _PreviousTextBoxBorderThickness;
 
