@@ -4,7 +4,7 @@ using System.Windows.Media;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace TouchKeyboard.Keyboard
+namespace TouchScreenBoard
 {
     public class TouchScreenKeyboard : Window
     {
